@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Keerthi Promoters</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -25,13 +26,23 @@
   <marquee behavior="scroll" direction="left">Welcome to Keerthi Promoters - Builders & Flat Promoters in Chennai</marquee>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" alt="Banner" />
-    <div class="hero-text">
-      <h1>Keerthi Promoters</h1>
-      <p>Builders & Flat Promoters in Chennai</p>
+<!-- Hero Slider -->
+<section class="hero">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" alt="Slide 1" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://rei.wlimg.com/prop_images/2717127/1129684_4-350x350.jpeg" alt="Slide 2" loading="lazy">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://rei.wlimg.com/prop_images/2717127/1089031_5-350x350.jpeg" alt="Slide 3" loading="lazy">
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
     <!-- About Section -->
 <section id="about">
@@ -53,32 +64,32 @@
     <h2>Our Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" alt="Project" />
+        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" loading="lazy" alt="Project" />
         <h3>Keerthi Raja Palace</h3>
         <p>2–3 BHK | Pallikaranai</p>
       </div>
       <div class="project-card">
-        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" alt="Project" />
+        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" loading="lazy" alt="Project" />
         <h3>Keerthi Rani Palace</h3>
         <p>3 BHK | Pallikaranai</p>
       </div>
       <div class="project-card">
-        <img src="https://rei.wlimg.com/prop_images/2717127/1089031_5-350x350.jpeg" alt="Project" />
+        <img src="https://rei.wlimg.com/prop_images/2717127/1089031_5-350x350.jpeg" loading="lazy" alt="Project" />
         <h3>Keerthi Rani Palace</h3>
         <p>3 BHK | Pallikaranai</p>
       </div>
       <div class="project-card">
-        <img src="https://rei.wlimg.com/prop_images/2717127/1129684_4-350x350.jpeg" alt="Project" />
+        <img src="https://rei.wlimg.com/prop_images/2717127/1129684_4-350x350.jpeg" loading="lazy" alt="Project" />
         <h3>Keerthi Rani Palace</h3>
         <p>3 BHK | Pallikaranai</p>
       </div>
       <div class="project-card">
-        <img src="https://catalog.wlimg.com/about-image/about-10.jpg" alt="Project" />
+        <img src="https://catalog.wlimg.com/about-image/about-10.jpg" loading="lazy" alt="Project" />
         <h3>Keerthi Rani Palace</h3>
         <p>3 BHK | Pallikaranai</p>
       </div>
       <div class="project-card">
-        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" alt="Project" />
+        <img src="https://catalog.wlimg.com/3/2717127/other-images/503893.jpg" loading="lazy" alt="Project" />
         <h3>Keerthi Rani Palace</h3>
         <p>3 BHK | Pallikaranai</p>
       </div>
@@ -105,6 +116,20 @@
 </section>
 
 
+
+  <!-- Services -->
+  <!-- <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Flat Promotion</li>
+      <li>Construction</li>
+      <li>Rental & Sale</li>
+      <li>Real Estate Development</li>
+    </ul>
+  </section> -->
+
+
+
   <!-- Contact -->
   <section id="contact">
   <h2>Contact Us</h2>
@@ -116,6 +141,9 @@
     <input type="phone" name="mobile" placeholder="Your Mobile No" required />
     <textarea name="message" placeholder="Your Message"></textarea>
     <button type="submit">Send</button>
+    <div id="loader" style="display:none; margin-top:10px;">
+  <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." width="40" />
+</div>
   </form>
   <p id="formResponse" style="margin-top: 10px;"></p>
 </section>
@@ -125,6 +153,6 @@
     <p>&copy; 2025 Keerthi Promoters Chennai. All rights reserved.</p>
   </footer>
 <script src="script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
